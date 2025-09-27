@@ -11,7 +11,7 @@ while True:
 
     except valueError:
         print("Invalid Input..please try entering a valid numbered score.")
-        
+
 if score > 100:
     print("Please, enter a valid score.(0-100)")
 

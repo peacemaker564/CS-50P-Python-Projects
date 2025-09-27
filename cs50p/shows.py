@@ -10,7 +10,10 @@ SHOWS = [
 ]
 
 def main():
+    cleaned_shows = []
     for show in SHOWS:
-        print(show.title().strip())
+        cleaned_shows.append(show.title().strip())
+
+    print(cleaned_shows)
 
 main()

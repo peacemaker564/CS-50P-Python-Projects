@@ -6,7 +6,7 @@ while True:
         score = int(input("Whats your score? "))
         if 0 <= score <= 100:
             break
-        else
+        else:
             print("Please enter a valid score(b/w 0-100)")
 
     except valueError:
@@ -14,7 +14,6 @@ while True:
 
 if score > 100:
     print("Please, enter a valid score.(0-100)")
-
 elif score >= 90:
     print("Outstanding performance..!")
 elif score >= 80:

@@ -11,9 +11,8 @@ while True:
     except ValueError:
         print("PLease enter a valid number....try again now!: ")
 
-if score > 100:
-    print("Please, enter a valid score.(0-100)")
-elif score >= 90:
+
+if score >= 90:
     print("Outstanding performance..!")
 elif score >= 80:
     print("Appreciable")

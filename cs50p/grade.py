@@ -1,6 +1,10 @@
 score = int(input("Whats your score? "))
 
-if score >= 90:
+
+if score > 100:
+    print("Please, enter a valid score.(0-100)")
+    
+elif score >= 90:
     print("Outstanding performance..!")
 elif score >= 80:
     print("Appreciable")

@@ -8,10 +8,7 @@ def main():
         print("Its odd.")
 
 def evenOdd(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    return True if num % 2 == 0 else False
 
 
 main()

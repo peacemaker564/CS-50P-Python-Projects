@@ -4,6 +4,7 @@ def main():
 
 def print_column(height):
 #    for _  in range(height):
+#       print("#")
 
 #another way of writing this is print("#")
         print("#\n" * height, end = "")

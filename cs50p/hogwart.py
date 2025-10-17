@@ -1,8 +1,8 @@
 #creating a dictionary
-students = {"Hermione": "Gryffindor",
-            "Harry":"Gryffindor" ,
-            "Ron":"Gryffindor" ,
-            "Draco" : "Slytherin"
+#students = {"Hermione": "Gryffindor",
+#           "Harry":"Gryffindor" ,
+#           "Ron":"Gryffindor" ,
+#            "Draco" : "Slytherin"
             }
 
 #This actually prints the keys of the dictionary.
@@ -14,4 +14,12 @@ students = {"Hermione": "Gryffindor",
 for student in students:
     print(student, students[student], sep=",")
 
-#Now, making sure there 
+#Now, making sure we fully utilize keys in dictionaries and lists.
+students = [ {"Name" : "Hermione" , "House":"Gryffindor" , "Patronus":"Otter"} ,
+            {"Name" : "Harry" , "House":"Gryffindor" , "Patronus":"Stag"} ,
+            {"Name" : "Ron" , "House":"Gryffindor" , "Patronus":"Jack Russell Terrier"} ,
+            {"Name" : "Draco" , "House":"Slytherin" , "Patronus": None}
+]
+
+for student in students:
+        print(student["Name"])

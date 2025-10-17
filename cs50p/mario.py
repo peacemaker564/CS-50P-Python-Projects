@@ -6,7 +6,7 @@ def main():
 
 def print_row(length):
       for i in range(length):
-            print("?" )
+            print("?", end = "")
 
 def print_column(height):
 #    for _  in range(height):

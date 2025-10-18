@@ -4,6 +4,6 @@ def main():
     create_report(spacecraft)
 
 def create_report(spacecraft):
-    print (spacecraft["Name"], spacecraft["Distance"], "AU" , sep = " : ")
+    return f"""
 
 main()

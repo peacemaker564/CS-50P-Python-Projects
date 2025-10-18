@@ -1,7 +1,7 @@
 def main():
     spacecraft = {"name":"James Webb Telescope"} #Distance is in AU, astronomical units.
     spacecraft["distance"] = 0.01
-    create_report(spacecraft)
+    print (create_report(spacecraft))
 
 def create_report(spacecraft):
     return f"""

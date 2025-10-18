@@ -1,9 +1,13 @@
 def main():
-    spacecraft = {"Name":"James Webb Telescope"} #Distance is in AU, astronomical units.
-    spacecraft["Distance"] = 0.01
+    spacecraft = {"name":"James Webb Telescope"} #Distance is in AU, astronomical units.
+    spacecraft["distance"] = 0.01
     create_report(spacecraft)
 
 def create_report(spacecraft):
     return f"""
+    ================== Report ==================
+
+    Name: {spacecraft["name]}
+    Distance: {spacecraft[distance]} AU
 
 main()

@@ -7,7 +7,7 @@ def create_report(spacecraft):
     return f"""
     ================== Report ==================
 
-    Name: {spacecraft["name]}
-    Distance: {spacecraft[distance]} AU
+    Name: {spacecraft["name"]}
+    Distance: {spacecraft["distance"]} AU
 
 main()

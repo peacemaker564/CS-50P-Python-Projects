@@ -1,6 +1,6 @@
 def main():
-    x = getint("What is the variable? ")
-    print(f"x is {x}")
+    z = getint("What is z? ")
+    print(f"z is {z}")
 
 def getint(prompt):
 

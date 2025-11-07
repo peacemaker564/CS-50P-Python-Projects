@@ -5,14 +5,11 @@ def main():
 def getint():
 
     while True:
-
-        try:
-            x = int(input("What's the x? "))
-        except ValueError:
-            print("x is not an integer, dumbass.! Try again.")
-        else:
+        x = int(input("What is x? "))
+        if x = true:
             return x
-
+        else:
+            print(f"{x} is not an integer.!")
 
 main()
 

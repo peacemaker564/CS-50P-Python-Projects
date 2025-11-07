@@ -1,12 +1,12 @@
 def main():
-    x = getint()
+    x = getint("What is the variable? ")
     print(f"x is {x}")
 
-def getint():
+def getint(prompt):
 
     while True:
         try:
-            return int(input("Whats x? "))
+            return int(input(prompt))
             #instead of return int, we can also return x, after x = int(input("..."))
         except ValueError:
             pass

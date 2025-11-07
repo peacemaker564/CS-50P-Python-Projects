@@ -3,5 +3,6 @@ try:
     print(f"x is {x}")
 
 except:
-    print(f"{x}incorrect value for x(use only integers!)")
+    print(f"{x} is not an integer, dumbass.! Try again.")
+    
 

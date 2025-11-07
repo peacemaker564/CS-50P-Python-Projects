@@ -5,7 +5,7 @@ def main():
     latitude =  coordinates_tuples[0]
 
     longitude =  coordinates_tuples[1]
-    
+
     coordinates_lists = [42.756, -7.115]
 
     print(f"Latitude = {latitude}")

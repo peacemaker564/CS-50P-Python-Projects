@@ -2,7 +2,8 @@
 
 
 greet = input("What greeting did u receive? ").strip().lower()
-print("You are owed " , greeting(greet))
+x = greeting(greet)
+print("You are owed " , x)
 
 def greeting(greet):
     if greet == "hello":

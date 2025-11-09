@@ -5,5 +5,5 @@
 #text/plain
 
 x = input("Enter the file name: ").strip().lower()
-
+if x.endswith(".")
 

@@ -7,15 +7,15 @@
 x = input("Enter the file name: ").strip().lower()
 if x.endswith((".gif", ".jpeg" , ".jpg" , ".png")):
     x = x.split(".")[-1]
-    print("image/",x.strip())
+    print("image/",x.strip(), sep = "")
 
 elif x.endswith((".pdf", ".zip")):
     x = x.split(".")[-1]
-    print("application/",x.strip())
+    print("application/",x.strip(), sep = "")
 
 elif x.endswith("txt"):
     x = x.split(".")[-1]
-    print("text/plain/",x.strip())
+    print("text/plain/",x.strip(), sep = "")
 else:
     print("Please enter a valid type.")
 

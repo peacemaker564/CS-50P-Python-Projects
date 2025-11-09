@@ -11,5 +11,11 @@
 #“Yes…!!!…?”
 #“Forty-two,” said Deep Thought, with infinite majesty and calm.”
 
-print("")
+print("Can u answer the question to life? ")
+affirm = input("Please type in your input: ")
+if(affirm == "42" or affirm == "forty-two" or affirm == "Forty Two"):
+    print("Yes!")
+else:
+    print("No!")
+
 

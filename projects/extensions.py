@@ -11,5 +11,6 @@ if x.endswith(".gif", ".jpeg" , ".jpg" , ".png"):
 elif x.endswith("pdf", "zip"):
     print("application/", x)
 else:
-    
+    print("Please enter a valid type.")
+
 

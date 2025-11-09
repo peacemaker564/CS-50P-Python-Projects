@@ -5,10 +5,10 @@
 #text/plain
 
 x = input("Enter the file name: ").strip().lower()
-if x.endswith(".gif", ".jpeg" , ".jpg" , ".png"):
+if x.endswith((".gif", ".jpeg" , ".jpg" , ".png")):
     print("image/", x)
 
-elif x.endswith("pdf", "zip"):
+elif x.endswith(("pdf", "zip")):
     print("application/", x)
 else:
     print("Please enter a valid type.")

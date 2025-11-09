@@ -1,9 +1,9 @@
 #Bank greeting project.
 
-
-greet = input("What greeting did u receive? ").strip().lower()
-x = greeting(greet)
-print("You are owed " , x)
+def main():
+    greet = input("What greeting did u receive? ").strip().lower()
+    x = greeting(greet)
+    print("You are owed $" , x)
 
 def greeting(greet):
     if greet == "hello":
@@ -17,5 +17,5 @@ def greeting(greet):
         owed_amount = 100
         return owed_amount
 
-
+main()
 

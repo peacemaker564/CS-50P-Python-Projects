@@ -6,11 +6,11 @@
 
 x = input("Enter the file name: ").strip().lower()
 if x.endswith((".gif", ".jpeg" , ".jpg" , ".png")):
-    x = x.split(".")
+    x = x.split(".")[-1]
     print("image/", x)
 
 elif x.endswith(("pdf", "zip")):
-    x = x.split(".")
+    x = x.split(".")[-1]
     print("application/", x)
 else:
     print("Please enter a valid type.")

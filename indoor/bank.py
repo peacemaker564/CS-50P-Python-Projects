@@ -6,11 +6,11 @@ def main():
     print("You are owed $" , x)
 
 def greeting(greet):
-    if greet == "hello":
+    if greet.startswith("hello"):
         owed_amount = 0
         return owed_amount
 
-    elif greet[0] == 'h':
+    elif greet.startswith('h'):
         owed_amount = 20
         return owed_amount
     else:

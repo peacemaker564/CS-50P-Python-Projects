@@ -1,17 +1,20 @@
 #Bank greeting project.
 
-owed_amount = 0;
-greeting = input("What greeting did u receive? ").strip().lower()
-if greeting == "hello":
-    print("You are owed $", owed_amount)
 
-elif greeting[0] == 'h':
-    owed_amount = 20
-    print("You are owed $", owed_amount)
+greet = input("What greeting did u receive? ").strip().lower()
+print("You are owed " , greeting(greet))
 
-else:
-    owed_amount = 100
-    print("You are owed $", owed_amount)
+def greeting(greet):
+    if greet == "hello":
+        owed_amount = 0
+        return owed_amount
+
+    elif greet[0] == 'h':
+        owed_amount = 20
+        return owed_amount
+    else:
+        owed_amount = 100
+        return owed_amount
 
 
 

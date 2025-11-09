@@ -9,9 +9,12 @@ if x.endswith((".gif", ".jpeg" , ".jpg" , ".png")):
     x = x.split(".")[-1]
     print("image/", x)
 
-elif x.endswith(("pdf", "zip")):
+elif x.endswith((".pdf", ".zip")):
     x = x.split(".")[-1]
     print("application/", x)
+
+elif x.endswith("txt"):
+    print("")
 else:
     print("Please enter a valid type.")
 

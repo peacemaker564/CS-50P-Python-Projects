@@ -12,10 +12,11 @@
 #“Forty-two,” said Deep Thought, with infinite majesty and calm.”
 
 print("Can u answer the question to life? ")
-affirm = input("Please type in your input: ").strip()
+affirm = input("Please type in your input: ").strip().lower()
 affirm = affirm.replace("-", " ")
-final = affirm.lower()
-if(final == "42" or final == "forty two"):
+
+print(affirm)
+if(affirm == "42" or affirm == "forty two"):
     print("Yes!")
 else:
     print("No!")

@@ -13,6 +13,8 @@
 
 print("Can u answer the question to life? ")
 affirm = input("Please type in your input: ").strip()
+
+final = affirm.lower()
 if(affirm == "42" or affirm == "forty-two" or affirm == "Forty Two" or affirm == "Forty-Two" or affirm == "forty two"):
     print("Yes!")
 else:

@@ -15,7 +15,7 @@ print("Can u answer the question to life? ")
 affirm = input("Please type in your input: ").strip()
 affirm = affirm.replace("-", " ")
 final = affirm.lower()
-if(affirm == "42" or final == "forty two"):
+if(final == "42" or final == "forty two"):
     print("Yes!")
 else:
     print("No!")

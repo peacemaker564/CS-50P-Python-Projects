@@ -1,0 +1,3 @@
+distances = {
+    "Voyager 1": ""
+}

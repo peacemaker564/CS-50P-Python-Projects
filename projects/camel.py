@@ -1,6 +1,4 @@
 #This program converts camel case to snake case(pythonic)
 
-x = input("camelCase: ")
-capital = x.split()
+x = input("camelCase: ",)
 
-print("capital is: ", capital)

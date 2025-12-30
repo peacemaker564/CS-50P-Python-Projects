@@ -8,5 +8,5 @@ while True:
         user_input = input("Plate: ")
 
     else:
-        
+
 

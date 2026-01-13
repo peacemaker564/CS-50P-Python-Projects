@@ -24,16 +24,12 @@ def is_valid(s):
 
                 if ch == "0":
                     return False
+                number_started = True
 
-        else:
-            number_started = True
+        else: #if its not a digit, and alphabet, return false.
+            if number_started:
+                return False
 
-
-
-
-
-
-    ...
-
+    return True
 
 main()

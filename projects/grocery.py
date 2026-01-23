@@ -4,12 +4,13 @@
 import sys
 items = []
 
+count = 0
+
 for i in range(len(sys.argv) - 1):
     item = input(" ")
-    items.append(item)
+    items.append(item).upper()
 
-for i in items:
-    print(i).capitalize()
+    if item
 
 
 

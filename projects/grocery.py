@@ -5,7 +5,10 @@ import sys
 items = []
 
 for i in range(len(sys.argv) - 1):
-    
+    item = input(" ")
+    items = 
+
+
 
 
 

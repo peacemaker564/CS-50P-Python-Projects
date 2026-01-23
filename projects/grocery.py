@@ -13,11 +13,10 @@ for i in range(len(sys.argv) - 1):
     if item in items:
         count = count+1
 
-        for i in items:
-            print(count,i)
-
     else:
         continue
+
+    
 
 
 

@@ -8,8 +8,7 @@ while true:
         if item in items_list:
             count = count + 1
 
-        else:
-            continue
+        
 
 
 

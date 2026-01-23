@@ -8,7 +8,10 @@ for i in range(len(sys.argv) - 1):
     item = input(" ")
     items.append(item)
 
-    
+for i in items:
+    print(i).capitalize()
+
+
 
 
 

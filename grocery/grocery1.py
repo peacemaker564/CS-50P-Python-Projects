@@ -8,7 +8,12 @@ while true:
         if item in items_list:
             count = count + 1
 
-        
+    except EOFError:
+        print("Exiting program.")
+
+    else:
+        for i in items_list:
+            print(count, )
 
 
 

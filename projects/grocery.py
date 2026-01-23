@@ -7,10 +7,21 @@ items = []
 count = 0
 
 for i in range(len(sys.argv) - 1):
-    item = input(" ")
+    item = input("")
     items.append(item).upper()
 
-    if item
+    if item in items:
+        count = count+1
+
+        for i in items:
+            print(count,i)
+
+    else:
+        continue
+
+
+
+
 
 
 

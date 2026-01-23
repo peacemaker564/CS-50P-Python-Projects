@@ -15,5 +15,5 @@ while True:
     else:
         continue
 
-for i in sorted(item_dict):
-    print(f"{item_dict[i]} {i}")
+for i in sorted(items_dict):
+    print(f"{items_dict[i]} {i}")

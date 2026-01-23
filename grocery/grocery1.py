@@ -1,12 +1,17 @@
 items_list = []
 
-for
+while true:
+    try:
+        item = input("").upper()
 
-item = input("").upper()
-items_list.append(item)
+        items_list.append(item)
+        if item in items_list:
+            count = count + 1
 
-for i in items_list:
-    print(i)
+        else:
+            continue
+
+
 
 
 

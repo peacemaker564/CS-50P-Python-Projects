@@ -22,29 +22,29 @@ while True:
     if date.startswith(months):
         match months:
             case "January":
-                date.replace("January", "1")
+                date = date.replace("January", "1")
             case "February":
-                date.replace("February", "2")
+                date = date.replace("February", "2")
             case "March":
-                date.replace("March", "3")
+                date = date.replace("March", "3")
             case "April":
-                date.replace("April", "4")
+                date = date.replace("April", "4")
             case "May":
-                date.replace("May", "5")
+                date = date.replace("May", "5")
             case "June":
-                date.replace("June", "6")
+                date = date.replace("June", "6")
             case "July":
-                date.replace("July", "7")
+                date = date.replace("July", "7")
             case "August":
-                date.replace("August", "8")
+                date = date.replace("August", "8")
             case "Septenber":
-                date.replace("September", "9")
+                date = date.replace("September", "9")
             case "October":
-                date.replace("October", "10")
+                date = date.replace("October", "10")
             case "November":
-                date.replace("November", "11")
+                date = date.replace("November", "11")
             case "December":
-                date.replace("December", "12")
+                date = date.replace("December", "12")
 
         date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
 

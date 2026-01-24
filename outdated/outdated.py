@@ -46,6 +46,9 @@ def format():
 
         date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
 
+    else:
+        print("Please enter date in valid format.")
+
     month, day, year = date.split()
 
 while format():

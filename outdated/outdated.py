@@ -15,7 +15,7 @@ months = [
 ]
 
 def format():
-    date = input("Date: ").strip()
+    date = input("Date: ").strip().title()
 
     if date.startswith(months):
         match months:
@@ -47,6 +47,6 @@ def format():
     month, day, year = date.split()
 
 while format():
-    
+
 
 

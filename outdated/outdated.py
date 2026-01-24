@@ -47,5 +47,6 @@ def format():
     month, day, year = date.split()
 
 while format():
+    
 
 

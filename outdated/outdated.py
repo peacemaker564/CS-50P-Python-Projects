@@ -20,7 +20,8 @@ def format():
     if date.startswith(months):
         match months:
             case "January":
-                
+                month =
+
     month, day, year = date.split("/")
 
 while format():

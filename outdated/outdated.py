@@ -50,7 +50,7 @@ while True:
             date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
 
         month, day, year = date.split("/")
-        new_date = year+"/"+month"/"+day
+        new_date = year+"/"+month+"/"+day
 
 
 

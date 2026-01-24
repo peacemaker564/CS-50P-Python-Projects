@@ -44,6 +44,8 @@ def format():
             case "December":
                 date.replace("December", "12")
 
+        date.replace(" ", "/").replace(",", "/")
+
     month, day, year = date.split()
 
 while format():

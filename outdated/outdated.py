@@ -15,7 +15,6 @@ months = [
 ]
 
 
-
 while True:
     try:
         date = input("Please enter date in valid format(MM/DD/YYYY): ").strip().title()
@@ -54,7 +53,7 @@ while True:
 
 
 
-    except FormatError:
+    except ValueError:
         print("Incorrect format. Try Again: ")
         continue
 

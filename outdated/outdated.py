@@ -17,7 +17,9 @@ months = [
 def format():
     date = input("Date: ").strip()
 
-    if date = months
+    if date.startswith(months):
+        match months:
+            case: 
     month, day, year = date.split("/")
 
 while format():

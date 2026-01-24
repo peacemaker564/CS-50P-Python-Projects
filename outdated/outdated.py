@@ -33,6 +33,16 @@ def format():
                 date.replace("June", "6")
             case "July":
                 date.replace("July", "7")
+            case "August":
+                date.replace("August", "8")
+            case "Septenber":
+                date.replace("September", "9")
+            case "October":
+                date.replace("October", "10")
+            case "November":
+                date.replace("November", "11")
+            case "December":
+                date.replace("December", "12")
 
     month, day, year = date.split()
 

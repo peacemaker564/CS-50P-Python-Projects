@@ -18,7 +18,7 @@ months = [
 
 while True:
     try:
-        date = input("Date: ").strip().title()
+        date = input("Please enter date in valid format(MM/DD/YYYY): ").strip().title()
 
         if date.startswith(months):
             match months:
@@ -49,14 +49,20 @@ while True:
 
             date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
 
-    except ValueError:
-        print("Error detected.")
+        month, day, year = date.split("/")
+        new_date = year 
 
-    else:
-        print("Please enter date in valid format.")
+
+
+    except FormatError:
+        print("Incorrect format. Try Again: ")
         continue
 
-    month, day, year = date.split()
+    else:
+        print(f"Updated format date: {new_date}")
+        print("ALL HAIL TECH.!")
+        break
+
 
 
 

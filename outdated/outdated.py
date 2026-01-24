@@ -20,9 +20,21 @@ def format():
     if date.startswith(months):
         match months:
             case "January":
-                month =
+                date.replace("January", "1")
+            case "February":
+                date.replace("February", "2")
+            case "March":
+                date.replace("March", "3")
+            case "April":
+                date.replace("April", "4")
+            case "May":
+                date.replace("May", "5")
+            case "June":
+                date.replace("June", "6")
+            case "July":
+                date.replace("July", "7")
 
-    month, day, year = date.split("/")
+    month, day, year = date.split()
 
 while format():
 

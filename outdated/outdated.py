@@ -14,7 +14,9 @@ months = [
     "December"
 ]
 
-def format():
+
+
+while True:
     date = input("Date: ").strip().title()
 
     if date.startswith(months):
@@ -48,10 +50,9 @@ def format():
 
     else:
         print("Please enter date in valid format.")
+        continue
 
     month, day, year = date.split()
-
-while format():
 
 
 

@@ -44,7 +44,7 @@ def format():
             case "December":
                 date.replace("December", "12")
 
-        date = date.replace(" ", "/").replace(",", "/")
+        date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
 
     month, day, year = date.split()
 

@@ -46,7 +46,8 @@ while True:
                 case "December":
                     date = date.replace("December", "12")
 
-            date = date.replace(" ", "/").replace(",", "/") #Now, the date looks like, 7/9/1963 (example)
+            date = date.replace(",", "") #Now, the date looks like, 7/9/1963 (example)
+            date = date.replace(" ", "/")
 
         month, day, year = date.split("/")
         new_date = year+"/"+month+"/"+day

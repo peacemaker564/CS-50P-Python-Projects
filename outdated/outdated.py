@@ -50,10 +50,10 @@ while True:
             date = date.replace(" ", "/")
 
         month, day, year = date.split("/")
-        if day < 0 or day > 31:
+        if int(day) < 0 or int(day) > 31:
             print("Number of days exceeds normal range.")
             continue
-        
+
         new_date = year+"/"+month+"/"+day
 
 

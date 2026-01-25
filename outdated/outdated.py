@@ -20,7 +20,7 @@ while True:
         date = input("Please enter date in valid format(MM/DD/YYYY): ").strip().title()
 
         if date.startswith(tuple(months)):
-            match months:
+            match date:
                 case "January":
                     date = date.replace("January", "1")
                 case "February":

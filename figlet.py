@@ -5,20 +5,16 @@ import sys
 from pyfiglet import Figlet
 from random import choice
 
-#def main():
-
-
-
-#def fig(value):
+def main():
     #1. First requirement.
     x = input("Input: ")
-    f = figlet(font=random)
+    f = figlet()
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
         sys.exit("Input capacity can be 0 or 2.")
 
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
-        print() #here randomChoice is a function name, which will use random
+        print(f.renderText(x)) #here randomChoice is a function name, which will use random
                                 #to select any random fonts.
 
 
@@ -28,7 +24,7 @@ def randomChoice():
     f = Figlet()
     available_fonts = f.getFonts()
     selected_font = random.choice(available_fonts)
-    return selected_font
+    return f.setFont(font = selected_font) #returns the value with selected font.
 
 
 

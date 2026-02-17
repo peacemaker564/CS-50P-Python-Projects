@@ -11,23 +11,17 @@ def main():
     name_list = []
     while True:
          try:
-             name.append(input("Name: "))
-
-             if name in name_dictionary:
-                 name_dictionary[name] += 1
-
-             else:
-                 name_dictionary[name] = 1
-
+             name_list.append(input("Name: "))
 
          except EOFError:
             print("End of input detected.")
             break
 
     print("Adieu, Adieu to", end ="")
-    for i in name_dictionary:
 
-        if name_dictionary[i] == len(name_dictionary) - 1:
+    for i in name_list:
+
+        if name_list[i] == len(name_dictionary) - 1:
             print()
         else:
             print(i,"," end = "")

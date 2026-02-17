@@ -16,7 +16,12 @@ def main():
     if len(sys.argv) == 1:
         randomChoice(x)
          #here randomChoice is a function name, which will use random
-                                #to select any random fonts.
+                       #to select any random fonts.
+
+    #Only possible option now is that the arguments  passd are two.
+    else:
+        g = Figlet()
+        font = sys.argv[2]
 
 
 def randomChoice(x):

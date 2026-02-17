@@ -12,8 +12,10 @@ def main():
          try:
              name = input("Name:")
 
-        except EOFError:
+         except EOFError:
             exit()
+
+    print("Adieu...")
 
 
 

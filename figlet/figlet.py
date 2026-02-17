@@ -6,7 +6,7 @@ from pyfiglet import Figlet
 from random import choice
 
 def main():
-    #1. First requirement.
+    #1. First requirem ent.
 
 
     if not (len(sys.argv) == 1 or len(sys.argv) == 3):

@@ -17,15 +17,15 @@ def main():
             print("End of input detected.")
             break
 
-    print("Adieu, Adieu to ", end ="")
+    print("Adieu, Adieu, to ", end ="")
 
     for i in name_list:
 
         if len(name_list) > 1:
              if i == name_list[-1]:
                 print("and", i)
-        else:
-            print(i,"," , end = "")
+
+        print(i,"," ,se , end = "")
 
 
 

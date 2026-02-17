@@ -13,6 +13,12 @@ def main():
          try:
              name = input("Name:")
 
+             if name in name_dictionary:
+                 name_dictionary[name] += 1
+
+             else:
+                 name_dictionary[name] = 1
+
 
          except EOFError:
             print("")

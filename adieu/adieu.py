@@ -12,8 +12,14 @@ def main():
         while True:
             name = input("Name:")
 
+        print("Adieu")
+
+
+
     except EOFError:
         exit()
+
+
 
 
 

@@ -22,11 +22,12 @@ def main():
     else:
         g = Figlet()
 
-        if sys.argv[1] == "-f" or sys.argv[1] == "-font":
-            final = g.setFont(font=sys.argv[2])
-            print()
+        if sys.argv[1] == "-f" or sys.argv[1] == "--font":
+            g.setFont(font=sys.argv[2])
+            print(g.renderText(x))
 
-
+        else:
+            print("-f or --font, nothing else.")
 
 
 
@@ -34,7 +35,7 @@ def randomChoice(x):
     f = Figlet()
     available_fonts = f.getFonts()
     selected_font = choice(available_fonts)
-    final_text = f.setFont(font = selected_font)
+    f.setFont(font = selected_font)
     print(f.renderText(x)) #returns the value with selected font.
 
 

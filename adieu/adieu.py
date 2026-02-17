@@ -13,7 +13,8 @@ def main():
              name = input("Name:")
 
          except EOFError:
-            exit()
+            print("")
+            break
 
     print("Adieu...")
 

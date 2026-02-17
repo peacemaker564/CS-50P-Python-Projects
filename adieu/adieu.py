@@ -16,8 +16,8 @@ def main():
             print("")
             break
 
-    for i in name:
-        print("Adieu..." + i)
+    for nam in name:
+        print("Adieu..." + nam)
 
 
 

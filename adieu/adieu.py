@@ -21,9 +21,10 @@ def main():
 
 
          except EOFError:
-            print("")
+            print("End of input detected.")
             break
 
+    print("Adieu, Adieu, Adieu")
     for i in name_dictionary:
         print("Adieu..." , i)
 

@@ -8,10 +8,10 @@
 # and 𝑛 names with 𝑛 −1 commas and one and, as in the below:
 
 def main():
-    name_dictionary = {}
+    name_list = []
     while True:
          try:
-             name = input("Name:")
+             name.append(input("Name: "))
 
              if name in name_dictionary:
                  name_dictionary[name] += 1
@@ -27,7 +27,7 @@ def main():
     print("Adieu, Adieu to", end ="")
     for i in name_dictionary:
 
-        if name_dictionary[i] = len(name_dictionary) - 1:
+        if name_dictionary[i] == len(name_dictionary) - 1:
             print()
         else:
             print(i,"," end = "")

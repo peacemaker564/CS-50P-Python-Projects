@@ -6,3 +6,8 @@
 # Then bid adieu to those names, separating two names with one and,
 # three names with two commas and one and,
 # and 𝑛 names with 𝑛 −1 commas and one and, as in the below:
+
+def main():
+    try:
+        while True:
+            name = input("Name:")

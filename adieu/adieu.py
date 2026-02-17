@@ -8,16 +8,14 @@
 # and 𝑛 names with 𝑛 −1 commas and one and, as in the below:
 
 def main():
-    try:
-        while True:
-            name = input("Name:")
+    while True:
+         try:
+             name = input("Name:")
 
-        print("Adieu")
+        except EOFError:
+            exit()
 
 
-
-    except EOFError:
-        exit()
 
 
 

@@ -12,6 +12,7 @@ from random import choice
 #def fig(values):
     #1. First requirement.
     x = input("Input: ")
+    f = figlet(font=random)
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
         sys.exit("Input capacity can be 0 or 2.")
 

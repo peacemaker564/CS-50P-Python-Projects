@@ -21,7 +21,13 @@ def main():
     #Only possible option now is that the arguments  passd are two.
     else:
         g = Figlet()
-        final_txt = g.setFont(font=sys.argv[2])
+
+        if sys.argv[1] == "-f" or sys.argv[1] == "-font":
+            final = g.setFont(font=sys.argv[2])
+            print()
+
+
+
 
 
 def randomChoice(x):

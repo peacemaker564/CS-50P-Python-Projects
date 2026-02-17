@@ -24,9 +24,12 @@ def main():
             print("End of input detected.")
             break
 
-    print("Adieu, Adieu, Adieu")
+    print("Adieu, Adieu to", end ="")
     for i in name_dictionary:
-        print("Adieu..." , i)
+
+        if i = len(name_dictionary) - 1:
+            
+        print(i,"," end = "")
 
 
 

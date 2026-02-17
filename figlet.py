@@ -8,7 +8,6 @@ from random import choice
 def main():
     #1. First requirement.
     x = input("Input: ")
-    f = figlet()
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
         sys.exit("Input capacity can be 0 or 2.")
 
@@ -24,6 +23,7 @@ def randomChoice():
     f = Figlet()
     available_fonts = f.getFonts()
     selected_font = random.choice(available_fonts)
+    final_text = f.setFont(font = selected_font)
     return f.setFont(font = selected_font) #returns the value with selected font.
 
 

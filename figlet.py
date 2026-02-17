@@ -24,7 +24,10 @@ from random import choice
 
 
 
+def randomChoice():
+    f = Figlet()
 
+    available_font = 
 
 
 

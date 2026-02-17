@@ -24,7 +24,7 @@ def main():
         if i == name_list[-1]:
             print(",and ", i)
         else:
-            print(i,"," end = "")
+            print(i,"," , end = "")
 
 
 

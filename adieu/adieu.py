@@ -21,8 +21,8 @@ def main():
 
     for i in name_list:
 
-        if name_list[i] == len(name_dictionary) - 1:
-            print()
+        if i == name_list[-1]:
+            print(",and ", i)
         else:
             print(i,"," end = "")
 

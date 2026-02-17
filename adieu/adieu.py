@@ -11,13 +11,14 @@ def main():
     while True:
          try:
              name = input("Name:")
+             
 
          except EOFError:
             print("")
             break
 
     for nam in name:
-        print("Adieu..." + nam)
+        print("Adieu..." +)
 
 
 

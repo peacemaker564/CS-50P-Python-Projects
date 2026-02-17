@@ -21,7 +21,7 @@ def main():
 
 
 
-
+main()
 
 
 

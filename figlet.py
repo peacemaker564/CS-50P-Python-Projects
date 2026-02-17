@@ -9,7 +9,13 @@ def main():
 
 
 def fig():
+    #1. First requirement.
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
-        
+        sys.exit("Input capacity can be 0 or 2.")
+
+    
+
+
+
 
 

@@ -2,7 +2,8 @@
 #using a specific font(which uses pyfiglet package).
 #IF NO FONT IS SELECTED, A RANDOM FONT IS CHOSEN.
 import sys
-import figlet
+from pyfiglet import Figlet
+from random import choice
 
 def main():
 
@@ -13,8 +14,10 @@ def fig(values):
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
         sys.exit("Input capacity can be 0 or 2.")
 
+    #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
         
+
 
 
 

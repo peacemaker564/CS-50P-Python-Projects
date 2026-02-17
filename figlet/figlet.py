@@ -7,10 +7,12 @@ from random import choice
 
 def main():
     #1. First requirement.
-    x = input("Input: ")
+
 
     if not (len(sys.argv) == 1 or len(sys.argv) == 3):
         sys.exit("Input capacity can only be zero arguments or 2.")
+
+    x = input("Input: ")
 
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 1:

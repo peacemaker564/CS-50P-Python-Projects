@@ -21,8 +21,9 @@ def main():
 
     for i in name_list:
 
-        if i == name_list[-1]:
-            print("and", i)
+        if len(name_list) > 1:
+             if i == name_list[-1]:
+                print("and", i)
         else:
             print(i,"," , end = "")
 

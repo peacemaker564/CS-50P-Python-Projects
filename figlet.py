@@ -11,12 +11,13 @@ def main():
 
 def fig(values):
     #1. First requirement.
+    x = inp
     if not (len(sys.argv) == 0 or len(sys.argv) == 2):
         sys.exit("Input capacity can be 0 or 2.")
 
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
-        
+
 
 
 

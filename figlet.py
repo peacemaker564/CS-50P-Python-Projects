@@ -9,11 +9,11 @@ def main():
     #1. First requirement.
     x = input("Input: ")
 
-    if not (len(sys.argv) == 0 or len(sys.argv) == 2):
-        sys.exit("Input capacity can only be 0 or 2.")
+    if not (len(sys.argv) == 1 or len(sys.argv) == 2):
+        sys.exit("Input capacity can only be zero arguments(Meaning index1) or 2.")
 
     #2. If no argument, using random to give random font outputs.
-    if len(sys.argv) == 0:
+    if len(sys.argv) == 1:
         randomChoice(x)
          #here randomChoice is a function name, which will use random
                                 #to select any random fonts.

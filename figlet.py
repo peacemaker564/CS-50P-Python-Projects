@@ -9,6 +9,7 @@ def main():
 
 
 def fig():
-    x = input("Input: ", sys.argv[1])
+    if not (len(sys.argv) == 0 or len(sys.argv) == 2):
+        
 
 

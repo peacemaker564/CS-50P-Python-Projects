@@ -9,7 +9,7 @@ from random import choice
 
 
 
-#def fig(values):
+#def fig(value):
     #1. First requirement.
     x = input("Input: ")
     f = figlet(font=random)
@@ -18,7 +18,11 @@ from random import choice
 
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
-        print(figlet(x))
+        value = randomChoice #here randomChoice is a function name, which will use random
+                                #to select any random fonts.
+
+
+
 
 
 

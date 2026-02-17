@@ -18,7 +18,7 @@ from random import choice
 
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
-        value = randomChoice #here randomChoice is a function name, which will use random
+        print() #here randomChoice is a function name, which will use random
                                 #to select any random fonts.
 
 
@@ -26,8 +26,10 @@ from random import choice
 
 def randomChoice():
     f = Figlet()
+    available_fonts = f.getFonts()
+    selected_font = random.choice(available_fonts)
+    return selected_font
 
-    available_font = 
 
 
 

@@ -15,5 +15,5 @@ def main():
     except EOFError:
         exit()
 
-    else:
-        
+
+

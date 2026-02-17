@@ -11,3 +11,9 @@ def main():
     try:
         while True:
             name = input("Name:")
+
+    except EOFError:
+        exit()
+
+    else:
+        continue

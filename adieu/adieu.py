@@ -25,7 +25,7 @@ def main():
             break
 
     for i in name_dictionary:
-        print("Adieu..." + name_dictionary[i])
+        print("Adieu..." , i)
 
 
 

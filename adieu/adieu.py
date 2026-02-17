@@ -25,7 +25,7 @@ def main():
             break
 
     for nam in name:
-        print("Adieu..." +)
+        print("Adieu...")
 
 
 

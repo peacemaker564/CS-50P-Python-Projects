@@ -29,8 +29,7 @@ def randomChoice():
 
 
 
-
-
+main()
 
 
 

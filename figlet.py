@@ -15,7 +15,7 @@ def main():
     #2. If no argument, using random to give random font outputs.
     if len(sys.argv) == 0:
         randomChoice(f)
-        print(f.renderText(x)) #here randomChoice is a function name, which will use random
+         #here randomChoice is a function name, which will use random
                                 #to select any random fonts.
 
 
@@ -26,7 +26,7 @@ def randomChoice(f):
     available_fonts = f.getFonts()
     selected_font = choice(available_fonts)
     final_text = f.setFont(font = selected_font)
-    return final_text #returns the value with selected font.
+    print() #returns the value with selected font.
 
 
 main()

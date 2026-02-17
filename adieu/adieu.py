@@ -8,10 +8,11 @@
 # and 𝑛 names with 𝑛 −1 commas and one and, as in the below:
 
 def main():
+    name_dictionary = {}
     while True:
          try:
              name = input("Name:")
-             
+
 
          except EOFError:
             print("")

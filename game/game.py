@@ -21,8 +21,8 @@ guess = randint(1, n)
 user_input = 0
 
 while guess != user_input:
-    user_input = int(input("Guess: "))
-
+    user_input = input("Guess: ")
+    
     #Another checkpoint for guess.
     if not user_input.isdigit() and user_input > 0:
         continue

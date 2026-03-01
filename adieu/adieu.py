@@ -27,7 +27,7 @@ def main():
 
         print(i ,sep ="" , end = "")
 
-    print(" "/n"")
+    print("\n")
 
 main()
 

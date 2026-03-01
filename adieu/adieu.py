@@ -27,11 +27,7 @@ def main():
 
     for i in name_list:
         if len(name_list) == 1:
-            print(i)
-
-        elif len(name_list) == 2:
-            print(i, " and ")
-
+            print(i, sep=" ")
 
     print("\n")
 

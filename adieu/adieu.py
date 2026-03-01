@@ -20,9 +20,6 @@ def main():
 
     for i in name_list:
 
-        if len(name_list) == 1:
-            print(print(i , sep ="" , end = ""))
-            break
 
         elif 1 < len(name_list) <= 2:
              if i == name_list[-1]:
@@ -31,7 +28,8 @@ def main():
         elif len(name_list) > 2:
             if i == name_list[-1]:
                 print(" , and", i)
-        print(i, ", " , sep ="" , end = "")
+
+        print(", ", i , sep ="" , end = "")
 
 
 

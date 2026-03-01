@@ -17,6 +17,7 @@ def main():
          except EOFError:
             break
 
+    print("\n")
     print("Adieu, Adieu, to ", end ="")
 
 # ...
@@ -25,10 +26,14 @@ def main():
 # on three different basis, 1. One name, 2. Two names, and
 # 3. 3 or more names.
     if len(name_list) == 1:
-            print(name_list[0])
-            
+        print(name_list[0])
+    elif len(name_list) == 2:
+        print(name_list[0], "and" , name_list[1])
 
-    print("\n")
+    else:
+        for i in name_list:
+            print(i,)
+
 
 #
 main()

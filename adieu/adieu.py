@@ -30,7 +30,7 @@ def main():
             print(i)
 
         elif len(name_list) == 2:
-            print(i, ", ")
+            print(i, " and ")
 
 
     print("\n")

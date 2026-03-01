@@ -31,7 +31,7 @@ def main():
         elif len(name_list) > 2:
             if i == name_list[-1]:
                 print(" , and", i)
-        print(", ", i , sep ="" , end = "")
+        print(i, ", " , sep ="" , end = "")
 
 
 

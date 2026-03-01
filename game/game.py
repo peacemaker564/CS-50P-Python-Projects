@@ -21,6 +21,9 @@ guess = randint(1, n)
 user_input = 0
 
 while guess != user_input:
+    #Use try and except to create a user entered value
+    #check(should be positive, and do not accept anything other than digits.)
+
     while True:
              try:
                 user_input = int(input("Guess: "))

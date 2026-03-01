@@ -30,7 +30,7 @@ while guess != user_input:
                 if not user_input > 0:
                     continue
 
-             except ValueError or TypeError:
+             except ValueError:
                 continue
 
              else:
@@ -38,12 +38,12 @@ while guess != user_input:
 
 
     if user_input < guess:
-        print("The value is too small.")
+        print("Too small!")
     elif user_input > guess:
-        print("The value is too large.")
+        print("Too large!")
 
 
-print(f"Hooray, our entered value" , {user_input} , "matches the target value", {guess} , ".")
+print("Just right!")
 
 
 

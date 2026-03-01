@@ -33,7 +33,7 @@ def main():
     else:
         for i in name_list:
             if name_list[-1]:
-                print("and")
+                print("and ", i)
             print(i, ", ")
 
 

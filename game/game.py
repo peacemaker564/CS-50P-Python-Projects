@@ -23,9 +23,11 @@ user_input = 0
 while guess != user_input:
     while True:
              try:
-                user_input = input("Guess: ")
+                user_input = int(input("Guess: "))
+                if not user_input > 0:
+                    continue
 
-             except ValueError:
+             except ValueError or TypeError:
                 continue
 
              else:

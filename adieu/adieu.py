@@ -34,6 +34,7 @@ def main():
         for i in name_list:
             if name_list[-1]:
                 print("and")
+            print(i, ", ")
 
 
 #

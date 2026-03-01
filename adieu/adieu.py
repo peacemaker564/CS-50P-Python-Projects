@@ -26,14 +26,12 @@ def main():
 # 3. 3 or more names.
 
     for i in name_list:
-        if 1 < len(name_list) <= 2:
-             if i == name_list[-1]:
-    #Adding another check field to add an oxford comma if there are more than 2 names.
-        elif len(name_list) > 2:
-            if i == name_list[-1]:
-                print(" , and", i)
+        if len(name_list) == 1:
+            print(i)
 
-        print(", ", i , sep ="" , end = "")
+        elif len(name_list) == 2:
+            print(i, ", ")
+
 
     print("\n")
 

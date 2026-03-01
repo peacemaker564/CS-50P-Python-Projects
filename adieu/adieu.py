@@ -24,10 +24,9 @@ def main():
 # This part is to print the names, correctly,
 # on three different basis, 1. One name, 2. Two names, and
 # 3. 3 or more names.
-
-    for i in name_list:
-        if len(name_list) == 1:
-            print(i, sep=" ")
+    if len(name_list) == 1:
+            print(name_list[0])
+            
 
     print("\n")
 

@@ -31,10 +31,11 @@ def main():
         print(name_list[0], "and" , name_list[1])
 
     else:
-        
+        #joins all the name except the last one.
+        first_part = ", ".join(name_list[:-1])
 
-
-
+        full_string = f"{first_part}, and {name_list[-1]}"
+        print(full_string)
 #
 main()
 

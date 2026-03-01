@@ -19,8 +19,6 @@ def main():
     print("Adieu, Adieu, to ", end ="")
 
     for i in name_list:
-
-
         if 1 < len(name_list) <= 2:
              if i == name_list[-1]:
                 print(" and", i)

@@ -30,6 +30,7 @@ def main():
 
         print(i , sep ="" , end = "")
 
+
     print("\n")
 
 main()

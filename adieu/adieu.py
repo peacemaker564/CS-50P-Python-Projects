@@ -18,7 +18,7 @@ def main():
             break
 
     print("\n")
-    print("Adieu, Adieu, to ", end ="")
+    print("Adieu, adieu, to ", end ="")
 
 # ...
 

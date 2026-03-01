@@ -14,7 +14,6 @@ def main():
              name_list.append(input("Name: "))
 
          except EOFError:
-            print("End of input detected.")
             break
 
     print("Adieu, Adieu, to ", end ="")

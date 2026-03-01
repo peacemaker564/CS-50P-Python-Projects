@@ -21,11 +21,16 @@ guess = randint(1, n)
 user_input = 0
 
 while guess != user_input:
-    user_input = input("Guess: ")
-    
-    #Another checkpoint for guess.
-    if not user_input.isdigit() and user_input > 0:
-        continue
+    while True:
+             try:
+                user_input = input("Guess: ")
+
+             except ValueError:
+                continue
+
+             else:
+                break
+
 
     if user_input < guess:
         print("The value is too small.")

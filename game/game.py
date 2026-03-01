@@ -22,8 +22,10 @@ user_input = 0
 
 while guess != user_input:
     user_input = int(input("Guess: "))
-    while not user_input > 0:
-        user_input = int(input("Guess: "))
+
+    #Another checkpoint for guess.
+    if not user_input.isdigit() and user_input > 0:
+        continue
 
     if user_input < guess:
         print("The value is too small.")

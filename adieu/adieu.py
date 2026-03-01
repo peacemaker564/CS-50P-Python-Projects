@@ -31,10 +31,8 @@ def main():
         print(name_list[0], "and" , name_list[1])
 
     else:
-        for i in name_list:
-            if name_list[-1]:
-                print("and ", end="")
-            print(i, ", ", end="")
+        
+
 
 
 #

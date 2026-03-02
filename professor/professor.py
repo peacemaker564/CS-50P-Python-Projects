@@ -22,10 +22,14 @@ def main():
         sum = x + y
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
-        if user_answer == sum:
-            count = count + 1
+        try:
+            if user_answer == sum:
+                count = count + 1
+                continue
+        except ValueError:
             continue
-        elif:
+        else:
+            
 
 
 

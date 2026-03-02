@@ -17,7 +17,7 @@ def main():
     while true:
         try:
             n = int(input("Level: "))
-            if not (n == 1 or n == 2 or n == 3):
+            if n not in [1,2,3]:
                 continue
         except ValueError or TypeError:
             continue

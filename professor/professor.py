@@ -14,12 +14,19 @@ import random
 
 
 def main():
-    got = get_level()
-    x, y = got.split()
-    
 
+    count = 0
+    while count < 10:
+        got = get_level()
+        x, y = got.split()
+        sum = x + y
+        print(x, " + ", y , " = ", end="")
+        user_answer = int(input(""))
+        if user_answer == sum:
+            continue
+        elif:
+            
 
-    ...
 
 
 def get_level():

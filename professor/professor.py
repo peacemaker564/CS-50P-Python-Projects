@@ -23,9 +23,10 @@ def main():
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
         if user_answer == sum:
+            count = count + 1
             continue
         elif:
-            
+
 
 
 

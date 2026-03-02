@@ -14,6 +14,9 @@ import random
 
 
 def main():
+    got = get_level()
+    x, y = got.split()
+    
 
     ...
 
@@ -27,7 +30,9 @@ def get_level():
         except ValueError or TypeError:
             continue
         else:
-            generate_integer(n)
+            generated_nums = generate_integer(n)
+
+    return generated_nums
 
 
 def generate_integer(level):
@@ -42,7 +47,7 @@ def generate_integer(level):
         x = random.randint(100, 999)
         y = random.randint(100,999)
 
-    return x, y;
+    return x, y
     ...
 
 

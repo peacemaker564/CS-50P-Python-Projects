@@ -27,7 +27,7 @@ def get_level():
         except ValueError or TypeError:
             continue
         else:
-            generate_integer
+            generate_integer(n)
 
 
 def generate_integer(level):

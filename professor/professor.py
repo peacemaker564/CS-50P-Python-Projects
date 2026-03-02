@@ -37,10 +37,13 @@ def generate_integer(level):
 
     elif level == 2:
         x = random.randint(10, 99)
-        y = random.randint(19,99)
+        y = random.randint(10,99)
     else:
         x = random.randint(100, 999)
         y = random.randint(100,999)
+
+    return x
+    return y
     ...
 
 

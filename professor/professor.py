@@ -14,6 +14,11 @@ import random
 
 
 def main():
+
+    ...
+
+
+def get_level():
     while true:
         try:
             n = int(input("Level: "))
@@ -22,27 +27,20 @@ def main():
         except ValueError or TypeError:
             continue
         else:
-            get_level(n)
-    ...
+            generate_integer
 
 
-def get_level(n):
-
-    if n == 1:
+def generate_integer(level):
+    if level == 1:
        x = random.randint(0, 9)
        y = random.randint(0,9)
 
-    elif n == 2:
+    elif level == 2:
         x = random.randint(10, 99)
         y = random.randint(19,99)
     else:
         x = random.randint(100, 999)
         y = random.randint(100,999)
-
-    ...
-
-
-def generate_integer(level):
     ...
 
 

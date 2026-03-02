@@ -10,4 +10,27 @@
 #If correct, moving onto the next question.
 #After they are done answering all the questions, displaying the total score out of 10.
 
+import random
 
+
+def main():
+    while true:
+        try:
+            n = int(input("Level: "))
+        except ValueError or TypeError:
+            continue
+        else:
+            get_level(n)
+    ...
+
+
+def get_level():
+    ...
+
+
+def generate_integer(level):
+    ...
+
+
+if __name__ == "__main__":
+    main()

@@ -18,11 +18,12 @@ def main():
     x, y = got.split()
     
 
+
     ...
 
 
 def get_level():
-    while true:
+    while True:
         try:
             n = int(input("Level: "))
             if n not in [1,2,3]:

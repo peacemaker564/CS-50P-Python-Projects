@@ -42,8 +42,7 @@ def generate_integer(level):
         x = random.randint(100, 999)
         y = random.randint(100,999)
 
-    return x
-    return y
+    return x, y;
     ...
 
 

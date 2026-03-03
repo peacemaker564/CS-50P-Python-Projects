@@ -29,6 +29,7 @@ def main():
                     break
             elif:
                 print("EEE") #Mark of a wrong answer.
+                chances =  chances + 1
                 print(x, " + ", y , " = ", end="")
 
 

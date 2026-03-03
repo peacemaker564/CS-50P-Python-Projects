@@ -15,17 +15,14 @@ try:
 
     current_data = current_data.json()
 
-    print(current_data
-
-
-
+    price = current_data["priceUsd"]
 
 
 except requests.RequestException:
     exit()
 
 else:
-    print("$" , price)
+    print("$" , price )
 
 
 

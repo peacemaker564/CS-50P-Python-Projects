@@ -25,6 +25,8 @@ def main():
 
         if user_answer == sum:
                 count = count + 1
+        else:
+            continue
 
 
 def get_level():

@@ -17,13 +17,17 @@ def main():
 
     count = 0
     n = get_level()
+    
+    score = 0
+    chances = 0
+
     while count < 10:
             x, y = generate_integer(n)
             sum = x + y
             print(x, " + ", y , " = ", end="")
             user_answer = int(input(""))
-            chances = 0
-            score = 0
+
+
             while chances <= 2:
                 if user_answer == sum:
                         count = count + 1

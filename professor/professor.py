@@ -1,89 +1,59 @@
-#Generating ten math problems(x+y) on the basis of levels(1,2, and 3)
-#Where 1 refers to single digit sums, 2 refers to double digit sums, and 3 to triple.
-
-#Prompting the user to input the level, n.
-#Using that level to determine the difficulty(level) of the problems.
-#Using randint to generate random numbers, for both x and y.
-
-#Saving the sum of the two numbers in to a variable.
-#Prompting the user to provide the answer, and giving them three chances, and then displaying the answer if incorrect.
-#If correct, moving onto the next question.
-#After they are done answering all the questions, displaying the total score out of 10.
-
 import random
 
-
 def main():
-
     count = 0
     n = get_level()
-
     score = 0
 
-
     while count < 10:
-            chances = 0
-            x, y = generate_integer(n)
-            sum = x + y
-            print(x, " + ", y , " = ", end="")
+        chances = 0
+        
+        x = generate_integer(n)
+        y = generate_integer(n)
+        correct_sum = x + y
 
+        while chances < 3:
 
+            print(f"{x} + {y} = ", end="")
+            try:
+                user_answer = int(input(""))
+                if user_answer == correct_sum:
+                    score += 1
+                    break
+                else:
+                    print("EEE")
+                    chances += 1
+            except ValueError:
+                print("EEE")
+                chances += 1
+        else:
+            # Requirements: Output ONLY the equation, no extra words
+            print(f"{x} + {y} = {correct_sum}")
 
-            while chances <= 2:
-                try:
-                    user_answer = int(input(""))
-                    if user_answer == sum:
+        count += 1
 
-                        score = score + 1
-                        break
-                    
-                    else:
-                        print("EEE") #Mark of a wrong answer.
-                    chances =  chances + 1
-                    print(x, " + ", y , " = ", end="")
-
-                except ValueError:
-                    print("EEE") #Mark of a wrong answer.
-                    chances =  chances + 1
-                    print(x, " + ", y , " = ", end="")
-
-
-            else:
-                print("Correct answer is: ", sum)
-
-
-            count = count + 1
-
-    print("Your final score out of 10 is: " ,  score)
-
+    # Requirements: Output format must be "Score: X"
+    print(f"Score: {score}")
 
 def get_level():
     while True:
         try:
             n = int(input("Level: "))
-            if n not in [1,2,3]:
-                continue
-        except ValueError or TypeError:
-            continue
-        else:
-            return n
-
+            if n in [1, 2, 3]:
+                return n
+        except ValueError:
+            pass
 
 def generate_integer(level):
+    # Requirements: Returns a single randomly generated non-negative integer
     if level == 1:
-       x = random.randint(0, 9)
-       y = random.randint(0,9)
-
+        return random.randint(0, 9)
     elif level == 2:
-        x = random.randint(10, 99)
-        y = random.randint(10,99)
+        return random.randint(10, 99)
+    elif level == 3:
+        return random.randint(100, 999)
     else:
-        x = random.randint(100, 999)
-        y = random.randint(100,999)
-
-    return x, y
-    ...
-
+        raise ValueError("Invalid level")
 
 if __name__ == "__main__":
     main()

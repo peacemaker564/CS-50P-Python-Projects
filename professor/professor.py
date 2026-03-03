@@ -31,7 +31,7 @@ def main():
             while chances <= 2:
                 user_answer = int(input(""))
                 if user_answer == sum:
-                        count = count + 1
+
                         score = score + 1
                         break
 
@@ -41,8 +41,10 @@ def main():
                     print(x, " + ", y , " = ", end="")
                     user_answer = int(input(""))
 
-    else:
+            else:
                 print("Correct answer is: ", sum)
+
+            count = count + 1
 
     print("Your final score out of 10 is: " ,  score)
 

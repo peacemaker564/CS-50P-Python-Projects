@@ -27,10 +27,10 @@ def main():
             if user_answer == sum:
                     count = count + 1
                     break
-            else:
+            elif:
                 print("EEE") #Mark of a wrong answer.
                 print(x, " + ", y , " = ", end="")
-        
+
 
 
 def get_level():

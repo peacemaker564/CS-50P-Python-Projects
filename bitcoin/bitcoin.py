@@ -22,7 +22,8 @@ except requests.RequestException:
 else:
 
     price = round(float(current_data["data"]["priceUsd"]), 4)
-    
+    print(f"$ {price:,}")
+
 
 
 

@@ -18,23 +18,27 @@ def main():
     count = 0
     n = get_level()
     while count < 10:
-        x, y = generate_integer(n)
-        sum = x + y
-        print(x, " + ", y , " = ", end="")
-        user_answer = int(input(""))
-        chances = 0
-        score = 0
-        while chances < 3:
-            if user_answer == sum:
-                    count = count + 1
-                    score = score + 1
-                    break
+        try:
+            x, y = generate_integer(n)
+            sum = x + y
+            print(x, " + ", y , " = ", end="")
+            user_answer = int(input(""))
+            chances = 0
+            score = 0
+            while chances < 3:
+                if user_answer == sum:
+                        count = count + 1
+                        score = score + 1
+                        break
 
-            else:
-                print("EEE") #Mark of a wrong answer.
-                chances =  chances + 1
-                print(x, " + ", y , " = ", end="")
-                user_answer = int(input(""))
+                else:
+                    print("EEE") #Mark of a wrong answer.
+                    chances =  chances + 1
+                    print(x, " + ", y , " = ", end="")
+                    user_answer = int(input(""))
+
+        except ValueError:
+            continue
 
         else:
             print("Correct answer is: ", sum)

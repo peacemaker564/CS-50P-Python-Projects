@@ -40,9 +40,10 @@ def main():
                     chances =  chances + 1
                     print(x, " + ", y , " = ", end="")
                     
-
             else:
                 print("Correct answer is: ", sum)
+
+
 
             count = count + 1
 

@@ -30,7 +30,12 @@ def main():
 
 
             while chances <= 2:
-                user_answer = int(input(""))
+                try:
+                    user_answer = int(input(""))
+
+                except ValueError:
+                    continue
+
                 if user_answer == sum:
 
                         score = score + 1

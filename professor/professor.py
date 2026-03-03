@@ -33,9 +33,8 @@ def main():
                 chances =  chances + 1
                 print(x, " + ", y , " = ", end="")
 
-            else:
-                print("Correct answer is: ", sum)
-
+        if chances == 3:
+            print("Correct answer is: ", sum)
 
 
 def get_level():

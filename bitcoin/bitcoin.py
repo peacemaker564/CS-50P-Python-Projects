@@ -22,9 +22,9 @@ except requests.RequestException:
 
 except ValueError:
     print("Command-line argument is not a number")
+    sys.exit(1)
 
 else:
-
     price = round(float(current_data["data"]["priceUsd"]))
     user_price = (price * float(sys.argv[1]))
     print(f"$ {user_price:,.4f}")

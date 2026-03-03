@@ -19,7 +19,7 @@ def main():
     n = get_level()
     while count < 10:
         x, y = generate_integer(n)
-        sum = int(x + y)
+        sum = x + y
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
 
@@ -50,7 +50,7 @@ def generate_integer(level):
     else:
         x = random.randint(100, 999)
         y = random.randint(100,999)
-    
+
     return x, y
     ...
 

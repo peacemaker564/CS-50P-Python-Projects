@@ -16,18 +16,13 @@ try:
     current_data = current_data.json()
 
 
-
-
-
 except requests.RequestException:
     exit()
 
 else:
 
-    for results in current_data["data"]:
-        print("$", results["priceUsd"])
-
-
+    price = float(current_data["data"]["priceUsd"])
+    
 
 
 

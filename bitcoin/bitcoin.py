@@ -14,7 +14,7 @@ try:
     "53b894acb72bd4ff0eef8be9277eabe37b21efe36d98fc8735f3677372f3c75f")
 
     current_data = current_data.json()
-    price = round(float(current_data["data"]["priceUsd"]))
+    price = float(current_data["data"]["priceUsd"])
     user_price = (price * float(sys.argv[1]))
 
 

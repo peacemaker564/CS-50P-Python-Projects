@@ -16,9 +16,9 @@ import random
 def main():
 
     count = 0
-    get_level()
+    n = get_level()
     while count < 10:
-        x, y = generate_integer
+        x, y = generate_integer(n)
         sum = int(x + y)
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
@@ -36,7 +36,7 @@ def get_level():
         except ValueError or TypeError:
             continue
         else:
-            generate_integer(n)
+            return n
 
 
 def generate_integer(level):
@@ -50,7 +50,7 @@ def generate_integer(level):
     else:
         x = random.randint(100, 999)
         y = random.randint(100,999)
-    string = string(x,y)
+    
     return x, y
     ...
 

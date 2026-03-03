@@ -21,8 +21,9 @@ except requests.RequestException:
 
 else:
 
-    price = float(current_data["data"]["priceUsd"])
+    price = round(float(current_data["data"]["priceUsd"]), 4)
     
+
 
 
 

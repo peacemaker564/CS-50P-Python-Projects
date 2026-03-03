@@ -6,6 +6,11 @@ import sys
 import requests
 import json
 
-if len(sys.argv) != 2:
-    sys.exit(print("Enter atleast one value: "))
+try:
+    if len(sys.argv) != 2:
+    sys.exit("No value detected.")
+
+except requests.RequestException:
     
+
+

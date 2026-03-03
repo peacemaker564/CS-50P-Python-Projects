@@ -18,7 +18,7 @@ def main():
     count = 0
     get_level()
     while count < 10:
-        x, y = get_level()
+        x, y = generate_integer
         sum = int(x + y)
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))

@@ -13,7 +13,8 @@ try:
     current_data = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=" \
     "53b894acb72bd4ff0eef8be9277eabe37b21efe36d98fc8735f3677372f3c75f")
 
-    data = data.json
+    price = sys.argv[1] * current_data[priceUsd]
+
 
 
 
@@ -21,6 +22,7 @@ except requests.RequestException:
     exit()
 
 else:
+    print("$" , price)
 
 
 

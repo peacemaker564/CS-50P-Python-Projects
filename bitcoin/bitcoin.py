@@ -16,7 +16,11 @@ try:
     current_data = current_data.json()
 
 
-except requests.RequestException or ValueError:
+except requests.RequestException:
+    print("Probable network error.")
+    sys.exit(1)
+
+except ValueError:
     print("Command-line argument is not a number")
 
 else:

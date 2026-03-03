@@ -35,6 +35,9 @@ def main():
 
                 except ValueError:
                     continue
+                
+                else:
+
 
                 if user_answer == sum:
 

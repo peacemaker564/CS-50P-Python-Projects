@@ -39,7 +39,7 @@ def main():
                     print("EEE") #Mark of a wrong answer.
                     chances =  chances + 1
                     print(x, " + ", y , " = ", end="")
-                    
+
             else:
                 print("Correct answer is: ", sum)
 

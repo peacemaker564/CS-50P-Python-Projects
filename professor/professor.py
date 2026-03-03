@@ -22,11 +22,12 @@ def main():
         sum = x + y
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
-
-        if user_answer == sum:
-                count = count + 1
-        else:
-            continue
+        while True:
+            if user_answer == sum:
+                    count = count + 1
+                    break
+            else:
+                print(x, " + ", y , " = ", end="")
 
 
 def get_level():

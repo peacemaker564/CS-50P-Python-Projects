@@ -17,9 +17,9 @@ def main():
 
     count = 0
     while count < 10:
-        got = get_level()
+        got = string(get_level())
         x, y = got.split()
-        sum = x + y
+        sum = int(x + y)
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
 

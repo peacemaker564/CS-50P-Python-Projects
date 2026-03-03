@@ -27,7 +27,7 @@ except ValueError:
     sys.exit(1)
 
 else:
-    print(f"$ {user_price:,.4f}")
+    print(f"${user_price:,.4f}")
 
 
 

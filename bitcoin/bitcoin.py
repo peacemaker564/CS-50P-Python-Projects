@@ -17,7 +17,7 @@ try:
 
 
 except requests.RequestException or ValueError:
-    exit("Command line argument is not a number.")
+    print("Command-line argument is not a number")
 
 else:
 

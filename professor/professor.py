@@ -26,11 +26,15 @@ def main():
         while chances < 3:
             if user_answer == sum:
                     count = count + 1
+                    score = score + 1
                     break
-            elif:
+            elif user_answer != sum:
                 print("EEE") #Mark of a wrong answer.
                 chances =  chances + 1
                 print(x, " + ", y , " = ", end="")
+
+            else:
+                print("Correct answer is: ")
 
 
 

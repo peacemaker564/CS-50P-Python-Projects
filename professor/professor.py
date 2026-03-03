@@ -36,7 +36,11 @@ def main():
 
                         score = score + 1
                         break
-                
+                    
+                    else:
+                        print("EEE") #Mark of a wrong answer.
+                    chances =  chances + 1
+                    print(x, " + ", y , " = ", end="")
 
                 except ValueError:
                     print("EEE") #Mark of a wrong answer.

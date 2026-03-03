@@ -3,3 +3,9 @@
 #outputting the updateed exact price to the output buffer.
 
 import sys
+import requests
+import json
+
+if len(sys.argv) != 2:
+    sys.exit(print("Enter atleast one value: "))
+    

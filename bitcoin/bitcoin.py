@@ -16,8 +16,8 @@ try:
     current_data = current_data.json()
 
 
-except requests.RequestException:
-    exit()
+except requests.RequestException or ValueError:
+    exit("Command line argument is not a number.")
 
 else:
 

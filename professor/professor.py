@@ -16,6 +16,7 @@ import random
 def main():
 
     count = 0
+    get_level()
     while count < 10:
         x, y = get_level()
         sum = int(x + y)
@@ -35,7 +36,7 @@ def get_level():
         except ValueError or TypeError:
             continue
         else:
-            return generate_integer(n)
+            generate_integer(n)
 
 
 def generate_integer(level):

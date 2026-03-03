@@ -36,11 +36,8 @@ def main():
                     print(x, " + ", y , " = ", end="")
                     user_answer = int(input(""))
 
-            else:
-                print("Correct answer is: ", sum)
-
     else:
-        print("Correct answer is: ", sum)
+                print("Correct answer is: ", sum)
 
     print("Your final score out of 10 is: " ,  score)
 

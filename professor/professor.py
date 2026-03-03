@@ -23,7 +23,7 @@ def main():
         print(x, " + ", y , " = ", end="")
         user_answer = int(input(""))
         chances = 0
-        while chances <= 4:
+        while chances < 4:
             if user_answer == sum:
                     count = count + 1
                     break

@@ -50,7 +50,7 @@ def generate_integer(level):
     else:
         x = random.randint(100, 999)
         y = random.randint(100,999)
-
+    string = string(x,y)
     return x, y
     ...
 

@@ -19,9 +19,10 @@ def main():
     n = get_level()
 
     score = 0
-    chances = 0
+
 
     while count < 10:
+            chances = 0
             x, y = generate_integer(n)
             sum = x + y
             print(x, " + ", y , " = ", end="")
@@ -42,7 +43,6 @@ def main():
 
             else:
                 print("Correct answer is: ", sum)
-
 
 
             count = count + 1

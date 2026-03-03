@@ -28,12 +28,13 @@ def main():
                     count = count + 1
                     score = score + 1
                     break
-            elif user_answer != sum:
+
+            else:
                 print("EEE") #Mark of a wrong answer.
                 chances =  chances + 1
                 print(x, " + ", y , " = ", end="")
 
-        if chances == 3:
+        else:
             print("Correct answer is: ", sum)
 
 

@@ -7,7 +7,7 @@ def main():
 
     while count < 10:
         chances = 0
-        
+
         x = generate_integer(n)
         y = generate_integer(n)
         correct_sum = x + y
@@ -27,7 +27,7 @@ def main():
                 print("EEE")
                 chances += 1
         else:
-            # Requirements: Output ONLY the equation, no extra words
+            
             print(f"{x} + {y} = {correct_sum}")
 
         count += 1

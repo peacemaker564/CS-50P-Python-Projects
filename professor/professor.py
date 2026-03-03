@@ -34,7 +34,7 @@ def main():
                 print(x, " + ", y , " = ", end="")
 
             else:
-                print("Correct answer is: ")
+                print("Correct answer is: ", sum)
 
 
 

@@ -32,22 +32,17 @@ def main():
             while chances <= 2:
                 try:
                     user_answer = int(input(""))
-
-                except ValueError:
-                    continue
-                
-                else:
-
-
-                if user_answer == sum:
+                    if user_answer == sum:
 
                         score = score + 1
                         break
+                
 
-                else:
+                except ValueError:
                     print("EEE") #Mark of a wrong answer.
                     chances =  chances + 1
                     print(x, " + ", y , " = ", end="")
+
 
             else:
                 print("Correct answer is: ", sum)

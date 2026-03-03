@@ -27,12 +27,12 @@ def main():
                 print("EEE")
                 chances += 1
         else:
-            
+
             print(f"{x} + {y} = {correct_sum}")
 
         count += 1
 
-    # Requirements: Output format must be "Score: X"
+
     print(f"Score: {score}")
 
 def get_level():
@@ -42,18 +42,16 @@ def get_level():
             if n in [1, 2, 3]:
                 return n
         except ValueError:
-            pass
+            continue
 
 def generate_integer(level):
-    # Requirements: Returns a single randomly generated non-negative integer
+
     if level == 1:
         return random.randint(0, 9)
     elif level == 2:
         return random.randint(10, 99)
     elif level == 3:
         return random.randint(100, 999)
-    else:
-        raise ValueError("Invalid level")
 
 if __name__ == "__main__":
     main()

@@ -39,6 +39,8 @@ def main():
         else:
             print("Correct answer is: ", sum)
 
+    print("Your final score out of 10 is: " ,  score)
+
 
 def get_level():
     while True:

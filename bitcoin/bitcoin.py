@@ -8,7 +8,7 @@ import json
 
 try:
     if len(sys.argv) != 2:
-        sys.exit("No value detected.")
+        sys.exit("Missing command-line argument.")
 
     current_data = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=" \
     "53b894acb72bd4ff0eef8be9277eabe37b21efe36d98fc8735f3677372f3c75f")
@@ -21,8 +21,9 @@ except requests.RequestException:
 
 else:
 
-    price = round(float(current_data["data"]["priceUsd"]), 4)
-    print(f"$ {price:,}")
+    price = round(float(current_data["data"]["priceUsd"]))
+    user_price = (price * float(sys.argv[1]))
+    print(f"$ {user_price:,.4f}")
 
 
 

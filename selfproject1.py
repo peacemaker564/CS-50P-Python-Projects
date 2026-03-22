@@ -6,8 +6,17 @@ import requests
 
 def main():
     try:
-        date = input("Date(YYYY-MM-DD): ")
-        response = requests.get("")
+        Date = input("Date(YYYY-MM-DD): ")
+        API_KEY = 'f4QMMo67hOf8fpbd41IxWWC9o37FPmIojIFAcrMF'
+        url = 'https://api.nasa.gov/planetary/apod'
+
+        params = {
+            'api_key' : API_KEY,
+            'date' : Date
+        }
+
+        response = requests.get(url, params = params)
+        
 
 
 

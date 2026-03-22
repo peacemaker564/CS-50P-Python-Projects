@@ -7,7 +7,9 @@ import requests
 def main():
     try:
         date = input("Date(YYYY-MM-DD): ")
-
+        response = apod_object_parser.get_url(date)
         
+
+
 
 

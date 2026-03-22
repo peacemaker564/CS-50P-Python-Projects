@@ -1,4 +1,4 @@
-#Making a program to pull off astrology image of the date data from the nasa website.
+#Making a program to pull off astronomy image of the date data from the nasa website.
 #1. Asking the user for the date of which to grab the image url.
 #2. Using requests.get
 import requests

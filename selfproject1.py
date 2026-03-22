@@ -6,5 +6,8 @@ import requests
 
 def main():
     try:
-        date = input("")
+        date = input("Date(YYYY-MM-DD): ")
+
+        
+
 

@@ -16,9 +16,18 @@ def main():
         }
 
         response = requests.get(url, params = params)
-        
+        response.raise_for_status()
+
+    except requests.HTTPError:
+        print("Unable to extract data from the server. Request Failed.")
+
+    else:
+        data = response.json()
+        print(f"Title: {data.get('title')}")
+        print(f"URL: {data.get('url')}")
 
 
+main()
 
 
 

@@ -1,6 +1,6 @@
 def main():
     x = int(input("x: "))
-    print(f"x is: {square(x)}")
+    print(f"x squared is: {square(x)}")
 
 def square(n):
     return n * n

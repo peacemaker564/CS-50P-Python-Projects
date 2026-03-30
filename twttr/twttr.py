@@ -9,6 +9,6 @@ def main():
             string = string + ch
 
 
-    print(f"Output: {string}")
+    print(f"Output: {argument}")
 
 main()

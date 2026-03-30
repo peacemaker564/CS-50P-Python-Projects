@@ -1,5 +1,5 @@
 def main():
-    argument = input("Input: ").strip
+    argument = input("Input: ").strip()
     new_arg = argument.lower()
 
     vowels = ['a', 'e', 'i', 'o' , 'u']

@@ -1,15 +1,17 @@
 def main():
     argument = input("Input: ").strip()
+    print(F"Output: {shorten(argument)}")
 
+
+def shorten(word):
 
     vowels = ['a', 'e', 'i', 'o' , 'u']
-    string = ""
 
-    for ch in argument:
+    for ch in word:
         if not ch.lower() in vowels:
             string = string + ch
 
 
-    print(f"Output: {string}")
+    return string
 
 main()

@@ -6,6 +6,7 @@ def main():
 def shorten(word):
 
     vowels = ['a', 'e', 'i', 'o' , 'u']
+    string = ""
 
     for ch in word:
         if not ch.lower() in vowels:

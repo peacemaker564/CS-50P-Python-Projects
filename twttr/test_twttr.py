@@ -10,8 +10,13 @@ def test_lower():
     assert shorten("mumma") == "mmm"
 
 def test_intg():
-    with pytest.raises(TypeError):
-        shorten(5)
+    assert shorten("CS50") == "CS50"
+
+def test_punctuation():
+    assert shorten("Sup!?") == "Sp!?"
+    
+
+
 
 
 

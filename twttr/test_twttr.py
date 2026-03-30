@@ -8,5 +8,9 @@ def test_lower():
     assert shorten("avi") == "v"
     assert shorten("mumma") == "mmm"
 
-def test_
+def test_intg():
+    with pytest.raises(TypeError):
+        shorten(5)
+
+
 

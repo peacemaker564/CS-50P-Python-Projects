@@ -1,11 +1,11 @@
 def main():
     argument = input("Input: ").strip
-    argument = argument.lower()
+    new_arg = argument.lower()
 
     vowels = ['a', 'e', 'i', 'o' , 'u']
     string = ""
 
-    for ch in argument:
+    for ch in new_arg:
         if not ch in vowels:
             string = string + ch
 

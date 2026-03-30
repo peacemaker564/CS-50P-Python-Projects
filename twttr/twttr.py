@@ -1,2 +1,2 @@
 def main():
-    argument
+    argument = input("Input: ").

@@ -10,6 +10,6 @@ def main():
             string = string + ch
 
 
-    print(f"Output: {argument}")
+    print(f"Output: {new_arg}")
 
 main()

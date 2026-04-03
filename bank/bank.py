@@ -7,7 +7,6 @@ def hello_eval(greet):
         return 0
     elif greet.lower().startswith("h"):
         return 20
-
     else:
         return 100
 

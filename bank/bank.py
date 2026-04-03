@@ -1,11 +1,11 @@
 def main():
     greeting = input("Greeting: ").strip()
-    print(f"${hello_eval(greeting)}")
+    print(f"${value(greeting)}")
 
-def hello_eval(greet):
-    if greet.lower().startswith("hello"):
+def value(greeting):
+    if greeting.lower().startswith("hello"):
         return 100
-    elif greet.lower().startswith("h"):
+    elif greeting.lower().startswith("h"):
         return 20
     else:
         return 0

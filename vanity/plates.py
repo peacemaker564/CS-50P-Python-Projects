@@ -21,7 +21,7 @@ def is_valid(s):
     for ch in s[2:]:
         if ch.isdigit:
             if not number_started:
-                if ch == 0:
+                if ch == "0":
                     return False
                 number_started = True
 

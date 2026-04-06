@@ -11,10 +11,15 @@ def is_valid(s):
     if not(2 <= len(s) <= 6):
         return False
 
-    if not(s.isalnum()):
+    if not s.isalnum():
+        return False
+
+    if not(s[0].isalpha() and s[1].isalpha()):
         return False
 
     
+
+
 
 
 

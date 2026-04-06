@@ -12,6 +12,12 @@ def test_alpha():
 def test_numbers():
     assert is_valid("Bro2005") == False
     assert is_valid("1982JoJo") == False
+    assert is_valid("AAA22A") == False
+    assert is_valid("AA2A2") == False
+
+   
+    assert is_valid("AAA222") == True
+    assert is_valid("AA10") == True
 
 def test_check():
     assert is_valid("ASR205") == True

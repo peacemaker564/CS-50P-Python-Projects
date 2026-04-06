@@ -22,7 +22,7 @@ def is_valid(s):
         if ch.isdigit:
             if not number_started:
                 if ch == 0:
-                    return false
+                    return False
                 number_started = True
 
         else:

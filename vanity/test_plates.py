@@ -1,6 +1,6 @@
 #Testing the vanity plate code.
 
-from vanity import is_valid
+from plates import is_valid
 import pytest
 
 def test_alpha():

@@ -17,5 +17,10 @@ def test_check():
     assert is_valid("ASR205") == True
     assert is_valid("Jatt40") == True
     assert is_valid("AB!") == False
+    assert is_valid("A1") == False
+    assert is_valid("12") == False
+    assert is_valid("1AA") == False
+    assert is_valid("A") == False 
+    assert is_valid("OUTATIME") == False
 
 

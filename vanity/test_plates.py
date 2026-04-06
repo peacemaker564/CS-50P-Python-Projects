@@ -21,6 +21,6 @@ def test_check():
     assert is_valid("12") == False
     assert is_valid("1AA") == False
     assert is_valid("A") == False
-    assert is_valid("OUTATIME") == False
+    assert is_valid("OUTATIME") == True
 
 

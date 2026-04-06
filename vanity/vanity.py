@@ -17,7 +17,7 @@ def is_valid(s):
     if not(s[0].isalpha() and s[1].isalpha()):
         return False
 
-    
+    number_started = False
 
 
 

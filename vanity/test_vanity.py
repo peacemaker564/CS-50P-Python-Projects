@@ -1,7 +1,17 @@
 #Testing the vanity plate code.
 
-from vanity import is_valid()
+from vanity import is_valid
 import pytest
 
-def test_1():
-    assert is_valid("") ==
+def test_alpha():
+    assert is_valid("Avineak") == False
+    assert is_valid("Singh") == False
+
+def test_numbers():
+    assert is_valid("Bro2005") == False
+    assert is_valid("1982JoJo") == False
+
+def test_check():
+    assert is_valid("ASR205") == True
+    assert is_valid("Jatt40") == True
+

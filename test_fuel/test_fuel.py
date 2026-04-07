@@ -11,6 +11,8 @@ def test_convert():
         convert("1/0")
     with pytest.raises(ValueError):
         convert("three/four")
+    with pytest.raises(ValueError):
+        convert("-1/4")
 
 def test_gauge():
     assert gauge(1) == "E"

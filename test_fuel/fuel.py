@@ -1,36 +1,33 @@
 def main():
+    while True:
+        try:
+            fraction = input("Fraction: ")
+            x, y = fraction.split("/")
+            x = int(x)
+            y = int(y)
 
+            # Check if X is greater than Y (optional, but standard for this CS50 problem)
+            if x > y:
+                continue
 
-def
-while True:
-    try:
-        fraction = input("Fraction: ")
-        x, y = fraction.split("/")
-        x = int(x)
-        y = int(y)
+            div = round((x / y) * 100)
 
-        # Check if X is greater than Y (optional, but standard for this CS50 problem)
-        if x > y:
+        except ValueError:
+            print("Please enter appropriate values.")
             continue
-
-        div = round((x / y) * 100)
-
-    except ValueError:
-        print("Please enter appropriate values.")
-        continue
-    except ZeroDivisionError:
-        print("Unethical fraction. Try again.")
-        continue
-    else:
-        if div <= 1:
-            print("E")
-        elif div >= 99:
-            print("F")
+        except ZeroDivisionError:
+            print("Unethical fraction. Try again.")
+            continue
         else:
-            print(f"{div}%")
+            if div <= 1:
+                print("E")
+            elif div >= 99:
+                print("F")
+            else:
+                print(f"{div}%")
 
-        break
-    
+            break
+
 def convert(fraction):
     ...
 

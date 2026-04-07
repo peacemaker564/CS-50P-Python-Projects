@@ -2,38 +2,34 @@ def main():
     while True:
         try:
             fraction = input("Fraction: ")
-            x, y = fraction.split("/")
-            x = int(x)
-            y = int(y)
-
-            # Check if X is greater than Y (optional, but standard for this CS50 problem)
-            if x > y:
-                continue
-
-            div = round((x / y) * 100)
-
-        except ValueError:
-            print("Please enter appropriate values.")
-            continue
-        except ZeroDivisionError:
-            print("Unethical fraction. Try again.")
-            continue
-        else:
-            if div <= 1:
-                print("E")
-            elif div >= 99:
-                print("F")
-            else:
-                print(f"{div}%")
-
+            percentage = convert(fraction)
+            result = gauge(percentage)
+            print(result)
             break
+        except (ValueError, ZeroDivisionError):
+            continue
+
 
 def convert(fraction):
-    ...
+    x, y = fraction.split("/")
+    x = int(x)
+    y = int(y)
+
+    if y == 0:
+        raise ZeroDivisionError
+    if x > y:
+        raise ValueError
+
+    return round((x / y) * 100)
 
 
 def gauge(percentage):
-    ...
+    if percentage <= 1:
+        return "E"
+    elif percentage >= 99:
+        return "F"
+    else:
+        return f"{percentage}%"
 
 
 if __name__ == "__main__":

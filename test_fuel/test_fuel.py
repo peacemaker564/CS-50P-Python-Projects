@@ -10,4 +10,16 @@ def test_one():
 def test_two():
     assert gauge(25) == "25%"
     assert gauge(100) == "F"
+    assert gauge(99) == "F"
+
     assert gauge(1) == "E"
+    assert gauge(0) == "E"
+
+def test_valueError():
+    with pytest.raises("ValueError"):
+        convert("three/four")
+
+
+def test_ZeroDivisionError():
+    with pytest.raises("ZeroDivError"):
+        convert("1/0")

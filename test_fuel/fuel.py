@@ -1,8 +1,6 @@
 def main():
 
 
-
-
 def
 while True:
     try:
@@ -32,3 +30,14 @@ while True:
             print(f"{div}%")
 
         break
+    
+def convert(fraction):
+    ...
+
+
+def gauge(percentage):
+    ...
+
+
+if __name__ == "__main__":
+    main()
